@@ -8,9 +8,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- JQuery Library -->
     <script>
         $(document).ready(function(){
-            $(".simpleBorder").click(function()
+            $(".simpleBorder").ready(function() // Wait until the texture replacement class is ready
             {
-                $(".simpleBorder").hide();
+                var textureNames = ["Hello", "World"];
+                textureNames.forEach(element => {
+                    print(element);
+                });
             });
         });
     </script>
