@@ -12,9 +12,7 @@
             {
                 var textureNames = ["Hello", "World"];
                 textureNames.forEach(element => {
-                    $("div", {
-                        text: element
-                    }).appendTo(".simpleBorder");
+                    $(".simpleBorder").add("<div>" + element + "</div>");
                 });
             });
         });
