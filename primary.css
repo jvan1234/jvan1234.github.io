@@ -1,7 +1,7 @@
 @keyframes horizontalScroll
 {
-    0% {background-position-x: 0%;}
-    100% {background-position-x: 100%;}
+    0% {background-position: 0% 0%;}
+    100% {background-position: 100% 0%;}
 }
 
 .marioEsque
@@ -12,12 +12,13 @@
     
     display: flex;
 
-    background-image: repeating-linear-gradient(45deg, #16047a, #16047a 10px, #361dc4 10px, #361dc4 20px);
+    background-image: repeating-linear-gradient(45deg, #16047a, #16047a 20px, #361dc4 20px, #361dc4 40px);
+    background-size: 400% 400%;
 
     mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/80px 100%;
 
     animation-name: horizontalScroll;
-    animation-duration: 5s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -25,9 +26,10 @@
 #marioText
 {
     font-family: "Gill Sans", sans-serif;
-    align-self: center;
-    text-transform: capitalize;
     color: #FAFAFA;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 5px black;
 }
 
 html, body
