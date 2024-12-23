@@ -1,7 +1,7 @@
 @keyframes horizontalScroll
 {
-    0% {background-position: 0% 0%;}
-    100% {background-position: 0% 100%;}
+    0% {background-position-x: 0%;}
+    100% {background-position-x: 100%;}
 }
 
 .marioEsque
@@ -25,7 +25,7 @@
 #marioText
 {
     font-family: "Gill Sans", sans-serif;
-    text-align: center;
+    align-self: center;
     text-transform: capitalize;
     color: #FAFAFA;
 }
