@@ -7,13 +7,20 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- JQuery Library -->
     <script>
+        var textureNames = []; // Stores a list of all replacable texture files as a String[]
+
+        $.getJSON("defaultFormat.json", function(data){ // Get a JSON File and all of its contents
+            $.each(data, function(key, value){
+                if (key == "textures") {
+                    textureNames.push(value);
+                };
+            });
+        });
+
         $(document).ready(function(){
             $(".simpleBorder").ready(function() // Wait until the texture replacement class is ready
             {
-                var textureNames = ["Hello", "World"];
-                textureNames.forEach(element => {
-                    $(".simpleBorder").append("<div><p>" + element + "</p></div>");
-                });
+                
             });
         });
     </script>
