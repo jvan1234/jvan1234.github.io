@@ -16,11 +16,14 @@
         #361dc4 10px,
         #361dc4 20px
     );
+    
     animation-name: horizontalScroll;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    padding-top: 0px;
+
+    margin-top: 0px;
+    
     font-family: "Gill Sans", sans-serif;
     color: #FAFAFA
 }
