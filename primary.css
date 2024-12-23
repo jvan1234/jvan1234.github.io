@@ -10,5 +10,6 @@
     animation-name: horizontalScroll;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    height: 1920px;
 }
 
