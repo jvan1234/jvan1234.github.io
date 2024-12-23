@@ -12,6 +12,8 @@
     margin-top: 0px;
     padding-top: 0px;
     
+    display: flex;
+
     background: repeating-linear-gradient(
         45deg,
         #16047a,
