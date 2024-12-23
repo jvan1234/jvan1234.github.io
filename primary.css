@@ -22,6 +22,14 @@
     animation-iteration-count: infinite;
 }
 
+#marioText
+{
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FAFAFA;
+}
+
 html, body
 {
     margin-top: 0px;
