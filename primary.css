@@ -14,7 +14,7 @@
     
     display: flex;
 
-    background: repeating-linear-gradient(
+    background-image: repeating-linear-gradient(
         45deg,
         #16047a,
         #16047a 10px,
