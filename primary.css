@@ -6,6 +6,9 @@
 
 .marioEsque
 {
-    background-image: url("Images/superstar.png");
+    background-image: url("Images/stripes.png");
+    animation-name: horizontalScroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
