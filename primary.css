@@ -9,6 +9,7 @@
 .marioEsque
 {
     height: 300px;
+    margin-top: 0px;
     
     background: repeating-linear-gradient(
         45deg,
@@ -31,7 +32,7 @@ html, body
 {
     margin-top: 0px;
     padding-top: 0px;
-    
+
     margin-left: 0px;
     padding-left: 0px;
 
