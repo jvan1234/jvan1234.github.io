@@ -4,6 +4,11 @@
     100% {background-position: 100% 0%;}
 }
 
+@font-face {
+    font-family: MarioWii;
+    src: url("fonts/SuperMarioBrosWii.otf") format("opentype");
+}
+
 .marioEsque
 {
     height: 300px;
@@ -25,7 +30,7 @@
 
 #marioText
 {
-    font-family: "Gill Sans", sans-serif;
+    font-family: MarioWii, "Gill Sans", sans-serif;
     color: #FAFAFA;
     align-items: center;
     justify-content: center;
