@@ -32,6 +32,8 @@
 {
     font-family: MarioWii, "Gill Sans", sans-serif;
     color: #FAFAFA;
+    outline-color: #000;
+    outline-width: 2px;
     align-items: center;
     justify-content: center;
     text-shadow: 2px 2px 5px black;
