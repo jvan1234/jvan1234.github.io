@@ -34,6 +34,7 @@
     color: #FAFAFA;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 2px;
+    font-size: 200%;
     align-items: center;
     justify-content: center;
     text-shadow: 2px 2px 5px black;
