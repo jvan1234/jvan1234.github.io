@@ -12,13 +12,13 @@
 @font-face
 {
     font-family: BauhasRegular;
-    src: url("fonts/BauhausRegular.ttf");
+    src: url("fonts/BauhausRegular.ttf") format("opentype");
 }
 
 @font-face
 {
     font-family: BauhasBold;
-    src: url("fonts/BauhausBold.ttf");
+    src: url("fonts/BauhausBold.ttf") format("opentype");
 }
 
 
