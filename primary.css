@@ -9,6 +9,20 @@
     src: url("fonts/SuperMarioBrosWii.otf") format("opentype");
 }
 
+@font-face
+{
+    font-family: BauhasRegular;
+    src: url("fonts/BauhausRegular.ttf");
+}
+
+@font-face
+{
+    font-family: BauhasBold;
+    src: url("fonts/BauhausBold.ttf");
+}
+
+
+
 .marioEsque
 {
     height: 300px;
@@ -55,3 +69,10 @@ html, body
     padding-bottom: 0px;
 }
 
+#titleRegularBlack
+{
+    font-family: BauhasRegular, "Gill Sans", sans-serif;
+    color: #020202;
+    align-items: center;
+    justify-content: center;
+}
