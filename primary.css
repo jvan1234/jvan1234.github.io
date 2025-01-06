@@ -27,6 +27,12 @@
     src: url("fonts/FOT-Seurat\ Pro\ B.otf") format("opentype");
 }
 
+@font-face
+{
+    font-family: Wonder;
+    src: url("fonts/Wonder.otf") format("opentype");
+}
+
 .marioEsque
 {
     height: 300px;
@@ -75,7 +81,7 @@ html, body
 
 #titleRegularBlack
 {
-    font-family: BauhasRegular, "Gill Sans", sans-serif;
+    font-family: Wonder, "Gill Sans", sans-serif;
     font-size: 25px;
     color: #020202;
     text-align: center;
