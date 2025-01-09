@@ -1,8 +1,3 @@
-function changeThemes(String theme)
-{
-
-}
-
 $(document).ready(function(){
     // Find current background image
     var curImage = $("body").css("background-image");
