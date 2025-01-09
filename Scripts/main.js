@@ -4,6 +4,6 @@ $(document).ready(function(){
 
     console.log(curImage + " is the current background image...");
     if (curImage == "url(\"https://jvan1234.github.io/Images/blackCheckers.png\")") {
-        $("body").find("#regularNormal").css("color: white");
+        $("body").find("#normalRegular").css("color: white");
     }
 })
