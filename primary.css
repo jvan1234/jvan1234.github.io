@@ -79,6 +79,11 @@ html, body
     padding-bottom: 0px;
 }
 
+body
+{
+    background-image: url("/Images/blackCheckers.png");
+}
+
 #titleRegularBlack
 {
     font-family: Wonder, "Gill Sans", sans-serif;
