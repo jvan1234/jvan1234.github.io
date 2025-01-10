@@ -3,8 +3,11 @@ $(document).ready(function(){
     var curImage = $("body").css("background-image");
 
     console.log(curImage + " is the current background image...");
-    console.log('url("https://jvan1234.github.io/Images/blackCheckers.png")');
-    if (curImage == 'url("https://jvan1234.github.io/Images/blackCheckers.png")') {
+
+    curImage.replace('url("','').replace('")','');
+
+    console.log(curImage + " is the actual address...");
+    if (curImage == "https://jvan1234.github.io/Images/blackCheckers.png") {
         $("body").find("#normalRegular").css("color: white");
     }
 })
