@@ -92,7 +92,7 @@ body
     text-align: center;
 }
 
-#normalRegular
+.normalRegular
 {
     font-family: SeuratPro, "Gill Sans", sans-serif;
 }
