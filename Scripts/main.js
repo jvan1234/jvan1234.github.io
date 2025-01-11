@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     console.log(curImage + " is the current background image...");
 
-    curImage.replace('url("','').replace('")','');
+    curImage = curImage.replace('url("','').replace('")','');
 
     console.log(curImage + " is the actual address...");
     if (curImage == "https://jvan1234.github.io/Images/blackCheckers.png") {
