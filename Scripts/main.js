@@ -9,6 +9,6 @@ $(document).ready(function(){
     console.log(curImage + " is the actual address...");
     if (curImage === "https://jvan1234.github.io/Images/blackCheckers.png") {
         console.log("Image represents the dark mode! Making text white...");
-        $("body").find(".normalRegular").css("color: white");
+        $("body").find(".normalRegular").css({"color" : "white"});
     }
 })
