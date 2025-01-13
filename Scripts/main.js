@@ -3,7 +3,7 @@ function changeBackground(backgroundImage)
     if (backgroundImage === "https://jvan1234.github.io/Images/blackCheckers.png") { // If the set background image is equal to the dark background theme
         console.log("Image represents the dark mode! Making text white...");
         $("body").find(".normalRegular").css({"color" : "white"}); // Makes any normalRegular class white text
-        $("body").find(".titleRegular").css({"color" : "white"}); // Makes any titleRegular class white text
+        $("body").find("#titleRegular").css({"color" : "white"}); // Makes any titleRegular class white text
     }
 }
 
