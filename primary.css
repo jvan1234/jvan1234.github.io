@@ -84,11 +84,10 @@ body
     background-image: url("/Images/blackCheckers.png");
 }
 
-#titleRegularBlack
+#titleRegular
 {
     font-family: Wonder, "Gill Sans", sans-serif;
     font-size: 25px;
-    color: #020202;
     text-align: center;
 }
 
