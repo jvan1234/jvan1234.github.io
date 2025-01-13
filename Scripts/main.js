@@ -16,5 +16,6 @@ $(document).ready(function(){
     curImage = curImage.replace('url("','').replace('")','');
 
     console.log(curImage + " is the actual address...");
+    
     changeBackground(curImage);
 })
