@@ -5,6 +5,11 @@ function changeBackground(backgroundImage)
         $("body").find(".normalRegular").css({"color" : "white"}); // Makes any normalRegular class white text
         $("body").find("#titleRegular").css({"color" : "white"}); // Makes any titleRegular class white text
     }
+    else { // If the background image is not the black checkers (white checkers or otherwise)
+        console.log("Image represents the light mode! Making text black...");
+        $("body").find(".normalRegular").css({"color" : "black"}); // Makes any normalRegular class black text
+        $("body").find("#titleRegular").css({"color" : "black"}); // Makes any titleRegular class black text
+    }
 }
 
 $(document).ready(function(){
@@ -18,4 +23,6 @@ $(document).ready(function(){
     console.log(curImage + " is the actual address...");
     
     changeBackground(curImage);
+
+    
 })
