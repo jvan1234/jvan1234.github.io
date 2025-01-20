@@ -82,6 +82,13 @@ html, body
     padding-bottom: 0px;
 }
 
+button
+{
+    background-color: var(--main-dark);
+    outline: var(--main-light) solid 5px;
+    border-radius: 15px;
+}
+
 body
 {
     background-image: url("/Images/blackCheckers.png");
