@@ -25,11 +25,12 @@ $(document).ready(function(){
     changeBackground(curImage);
 
     // Source: https://css-tricks.com/snippets/jquery/simple-jquery-accordion/
-    var panels = $(".accordion > dd").hide(); // Finds all Description Details and gets their hide function
-
+    var panels = $(".accordion > dd"); // Finds all Description Details and gets their hide function
+    panels.hide();
     $("document").on("click", ".accordion > dt", function(event){
-        panels.slideUp();
-        $this.parent().next().slideDown();
-        return false
+        console.log("DT clicked!!");
+        panels.hide();
+        $this.parent().next().show();
+        return false;
     })
 })
