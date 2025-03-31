@@ -24,5 +24,9 @@ $(document).ready(function(){
     
     changeBackground(curImage);
 
-    
+    var accordian = $(".accordion") // Finds all accordion class objects
+    accordian.on("click", function(){
+        var next = this.next();
+        next.toggle();
+    })
 })

@@ -52,6 +52,13 @@
     animation-iteration-count: infinite;
 }
 
+.infoDiv
+{
+    background-color: var(--main-dark);
+    outline: var(--main-light) solid 5px;
+    border-radius: 15px;
+}
+
 #marioText
 {
     font-family: MarioWii, "Gill Sans", sans-serif;
