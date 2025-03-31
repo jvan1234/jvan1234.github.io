@@ -24,9 +24,12 @@ $(document).ready(function(){
     
     changeBackground(curImage);
 
-    var accordian = $(".accordion") // Finds all accordion class objects
-    accordian.on("click", function(){
-        var next = this.next();
-        next.toggle();
+    // Source: https://css-tricks.com/snippets/jquery/simple-jquery-accordion/
+    var panels = $(".accordion > dd").hide(); // Finds all Description Details and gets their hide function
+
+    $(".accordion > dt > a").on("click", function(){
+        panels.slideUp();
+        $this.parent().next().slideDown();
+        return false
     })
 })
