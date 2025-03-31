@@ -26,8 +26,9 @@ $(document).ready(function(){
 
     // Source: https://css-tricks.com/snippets/jquery/simple-jquery-accordion/
     var panels = $(".accordion > dd"); // Finds all Description Details and gets their hide function
+    console.log(panels);
     panels.hide();
-    $("document").on("click", ".accordion > dt", function(event){
+    $(".accordion > dt").click(function(event){
         console.log("DT clicked!!");
         panels.hide();
         $this.parent().next().show();
