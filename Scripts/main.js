@@ -30,8 +30,8 @@ $(document).ready(function(){
     panels.hide();
     $(".accordion > dt").click(function(event){
         console.log("DT clicked!!");
-        panels.hide();
-        $(this).next("dd").show();
+        panels.slideUp();
+        $(this).next("dd").slideDown();
         return false;
     })
 })
