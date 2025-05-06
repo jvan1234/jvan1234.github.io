@@ -89,11 +89,12 @@ html, body
     padding-bottom: 0px;
 }
 
-button
+dd, dt
 {
     background-color: var(--main-dark);
     outline: var(--main-light) solid 5px;
-    border-radius: 15px;
+    border-radius: 5px;
+    margin-left: 25px;
 }
 
 body
