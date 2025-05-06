@@ -31,7 +31,7 @@ $(document).ready(function(){
     $(".accordion > dt").click(function(event){
         console.log("DT clicked!!");
         panels.hide();
-        $this.next().show();
+        $(this).next("dd").show();
         return false;
     })
 })
