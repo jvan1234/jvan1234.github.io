@@ -41,8 +41,8 @@
     
     display: flex;
 
-    background-image: repeating-linear-gradient(45deg, var(--main-dark), var(--main-dark) 20px, var(--main-light) 20px, var(--main-light) 40px);
-    background-size: 400% 400%;
+    background-image: repeating-linear-gradient(45deg, var(--main-dark), var(--main-dark) 40px, var(--main-light) 40px, var(--main-light) 80px);
+    background-size: 100% 100%;
 
     mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/80px 100%;
 
