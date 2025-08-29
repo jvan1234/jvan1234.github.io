@@ -57,6 +57,7 @@
     background-color: var(--main-dark);
     outline: var(--main-light) solid 5px;
     border-radius: 15px;
+    width: 25%;
 }
 
 #marioText
@@ -95,6 +96,7 @@ dd, dt
     outline: var(--main-light) solid 5px;
     border-radius: 5px;
     margin-left: 25px;
+    margin-bottom: 25px;
 }
 
 body
