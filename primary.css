@@ -47,7 +47,7 @@
     mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/80px 100%;
 
     animation-name: horizontalScroll;
-    animation-duration: 240s;
+    animation-duration: 160s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
