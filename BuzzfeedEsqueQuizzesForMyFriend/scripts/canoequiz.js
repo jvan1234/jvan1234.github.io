@@ -1,11 +1,13 @@
 $(document).ready(function(){
     // Example Answer w/ scores
     const exampleQuestions = {
-        "(1) Do you like cats or dogs?" : {
+        1 : {
+            "question" : "(1) Do you like cats or dogs?",
             "Cats" : 10,
             "Dogs" : 15
         },
-        "(2) Are you over 18?" : {
+        2 : {
+            "question" : "(2) Are you over 18?",
             "Yes" : 1000,
             "No" : 0
         }
@@ -20,7 +22,7 @@ $(document).ready(function(){
     let btn = $("<button>", {
         "type":"button",
         "onclick":"alert(\"Surprise!\")",
-        "text":exampleQuestions[0][0]
+        "text":exampleQuestions[1].question
     })
     quizDiv.prepend(btn);
 })
