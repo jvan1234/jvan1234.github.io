@@ -20,7 +20,7 @@ $(document).ready(function(){
     let btn = $("<button>", {
         "type":"button",
         "onclick":"alert(\"Surprise!\")",
-        "text":"Click Here"
+        "text":exampleQuestions[0][0]
     })
     quizDiv.prepend(btn);
 })
