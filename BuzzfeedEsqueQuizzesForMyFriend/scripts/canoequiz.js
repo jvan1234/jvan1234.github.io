@@ -16,4 +16,10 @@ $(document).ready(function(){
     console.log("Page loaded!");
 
     console.log(quizDiv.id + " is the class of the questionaire div *hopefully");
+
+    let btn = $("<button>", {
+        "type":"button",
+        "onclick":alert("Surprise!")
+    })
+    quizDiv.prepend(btn);
 })
