@@ -1,3 +1,8 @@
+function myFunc()
+{
+    return 0
+}
+
 $(document).ready(function(){
     // Example Answer w/ scores
     const exampleQuestions = {
@@ -25,11 +30,12 @@ $(document).ready(function(){
     questionTxt.text(exampleQuestions[1].question);
     
 
+
     for (const answer of Object.keys(exampleQuestions[1].ans))
     {
         let btn = $("<button>", {
         "type":"button",
-        "onclick":"alert(" + exampleQuestions[1].ans[answer] + ")",
+        "onclick":"alert(" + exampleQuestions[1].ans[answer] + " " + myFunc() +");",
         "text":answer
         })
         quizDiv.append(btn);
