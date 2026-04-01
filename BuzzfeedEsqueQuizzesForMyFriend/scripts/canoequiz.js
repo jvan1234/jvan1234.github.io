@@ -1,9 +1,9 @@
-function myFunc()
-{
-    return 0
-}
-
 $(document).ready(function(){
+    function myFunc()
+    {
+        return 0;
+    }
+
     // Example Answer w/ scores
     const exampleQuestions = {
         1 : {
