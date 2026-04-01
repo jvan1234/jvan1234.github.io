@@ -23,10 +23,15 @@ $(document).ready(function(){
 
     console.log(quizDiv.id + " is the class of the questionaire div *hopefully");
     questionTxt.text(exampleQuestions[1].question);
-    let btn = $("<button>", {
+    
+
+    for (const answer of Object.keys(exampleQuestions[1].ans))
+    {
+        let btn = $("<button>", {
         "type":"button",
-        "onclick":"alert(\"Surprise!\")",
-        "text":exampleQuestions[1].question
-    })
-    quizDiv.prepend(btn);
+        "onclick":"alert(" + exampleQuestions[1].ans[answer] + ")",
+        "text":answer
+        })
+        quizDiv.append(btn);
+    }
 })
