@@ -37,7 +37,7 @@ $(document).ready(function(){
         "type":"button",
         "onclick":"alert(" + exampleQuestions[1].ans[answer] + " " + myFunc() +");",
         "text":answer
-        })
+        });
         quizDiv.append(btn);
     }
 })
