@@ -1,7 +1,7 @@
 $(document).ready(function(){
     function myFunc()
     {
-        return 0;
+        return 5;
     }
 
     // Example Answer w/ scores
@@ -35,7 +35,7 @@ $(document).ready(function(){
     {
         let btn = $("<button>", {
         "type":"button",
-        "onclick":"alert(" + exampleQuestions[1].ans[answer] + " " + myFunc() +");",
+        "onclick":"alert(" + exampleQuestions[1].ans[answer] + myFunc() +");",
         "text":answer
         });
         quizDiv.append(btn);
