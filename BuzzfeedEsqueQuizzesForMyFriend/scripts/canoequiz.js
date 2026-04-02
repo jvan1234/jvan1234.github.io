@@ -36,9 +36,11 @@ $(document).ready(function(){
     {
         let btn = $("<button>", {
         "type":"button",
-        "onclick":"myFunc();",
         "text":answer
         });
         quizDiv.append(btn);
+        btn.addEventListener("click", funciton() {
+            alert("Hello world!");
+        });
     }
 })
