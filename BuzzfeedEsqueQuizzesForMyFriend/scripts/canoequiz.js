@@ -36,7 +36,7 @@ $(document).ready(function(){
     {
         let btn = $("<button>", {
         "type":"button",
-        "onclick":myFunc(),
+        "onclick":"myFunc();",
         "text":answer
         });
         quizDiv.append(btn);
