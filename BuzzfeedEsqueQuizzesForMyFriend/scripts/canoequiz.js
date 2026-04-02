@@ -1,6 +1,7 @@
 $(document).ready(function(){
     function myFunc()
     {
+        alert("Hello!");
         return 5;
     }
 
@@ -29,13 +30,13 @@ $(document).ready(function(){
     console.log(quizDiv.id + " is the class of the questionaire div *hopefully");
     questionTxt.text(exampleQuestions[1].question);
     
-
+    console.log("This is an example of a console log!!");
 
     for (const answer of Object.keys(exampleQuestions[1].ans))
     {
         let btn = $("<button>", {
         "type":"button",
-        "onclick":"alert(" + exampleQuestions[1].ans[answer] + myFunc() +");",
+        "onclick":myFunc(),
         "text":answer
         });
         quizDiv.append(btn);
