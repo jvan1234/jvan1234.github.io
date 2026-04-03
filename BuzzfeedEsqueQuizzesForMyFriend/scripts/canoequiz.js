@@ -1,27 +1,36 @@
-$(document).ready(function(){
-    function myFunc()
-    {
-        alert("Hello!");
-        return 5;
-    }
-
-    // Example Answer w/ scores
-    const exampleQuestions = {
-        1 : {
-            "question" : "(1) Do you like cats or dogs?",
-            "ans" : {
-                "Cats" : 10,
-                "Dogs" : 15
-            }
-        },
-        2 : {
-            "question" : "(2) Are you over 18?",
-            "ans" : {
-                "Yes" : 1000,
-                "No" : 0
-            }
+// Example Answer w/ scores
+const exampleQuestions = {
+    1 : {
+        "question" : "(1) Do you like cats or dogs?",
+        "ans" : {
+            "Cats" : 10,
+            "Dogs" : 15
+        }
+    },
+    2 : {
+        "question" : "(2) Are you over 18?",
+        "ans" : {
+            "Yes" : 1000,
+            "No" : 0
         }
     }
+}
+
+function myFunc()
+{
+    alert("Hello!");
+    return 5;
+}
+
+function loadQuestion(div, num)
+{
+    // Blank for now!!
+}
+
+$(document).ready(function(){
+
+
+
 
     let quizDiv = $("#questionaire");
     let questionTxt = $("#question");
