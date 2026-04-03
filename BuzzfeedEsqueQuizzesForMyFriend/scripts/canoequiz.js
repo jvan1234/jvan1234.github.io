@@ -22,7 +22,7 @@ function loadQuestion(para, div, num)
 {
     $("button").remove(); // Removes all button elements to make room for the next quiz
 
-    if (num < Object.keys(exampleQuestions).length() + 1)
+    if (num < Object.keys(exampleQuestions).length + 1)
     {
         // Modify the paragraph text to represent the current question the user is on
         para.text(exampleQuestions[num].question);
