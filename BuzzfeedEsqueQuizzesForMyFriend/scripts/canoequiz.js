@@ -16,24 +16,22 @@ const exampleQuestions = {
     }
 }
 
-function myFunc()
-{
-    alert("Hello!");
-    return 5;
-}
+let score = 0;
 
 function loadQuestion(para, div, num)
 {
+    // Modify the paragraph text to represent the current question the user is on
     para.text(exampleQuestions[num].question);
-    // Blank for now!!
-    for (const answer of Object.keys(exampleQuestions[1].ans))
+    
+    // Use a for loop to iterate through all possible answers, adding a button that the user
+    for (const answer of Object.keys(exampleQuestions[num].ans))
     {
         let btn = $("<button>", {
         "type":"button",
         "text":answer
         });
         btn.click(function(){
-            alert("Button has been pressed!!");
+            alert($(this).text());
         });
         div.append(btn);
     }
