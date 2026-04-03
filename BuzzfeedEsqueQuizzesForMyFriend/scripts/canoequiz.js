@@ -23,6 +23,8 @@ function loadQuestion(para, div, num)
     // Modify the paragraph text to represent the current question the user is on
     para.text(exampleQuestions[num].question);
     
+    $("button").remove(); // Removes all button elements to make room for the next quiz
+
     // Use a for loop to iterate through all possible answers, adding a button that the user
     for (const answer of Object.keys(exampleQuestions[num].ans))
     {
@@ -32,7 +34,9 @@ function loadQuestion(para, div, num)
         "value":exampleQuestions[num].ans[answer]
         });
         btn.click(function(){
+            score += $(this).val();
             alert($(this).val());
+            loadQuestion(para, div, num+1);
         });
         div.append(btn);
     }
