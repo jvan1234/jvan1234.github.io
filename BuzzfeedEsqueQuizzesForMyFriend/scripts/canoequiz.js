@@ -165,6 +165,27 @@ function loadQuestion(para, div, num)
     }
     else
     {
+        let wintext = "Final score: " + score + "<br>";
+
+        if (score >= 29)
+        {
+            wintext += "Class 5";
+        }
+        else if (score >= 22)
+        {
+            wintext += "Class 4";
+        }
+        else if (score >= 15)
+        {
+            wintext += "Class 3";
+        }
+        else if (score >= 8)
+        {
+            wintext += "Class 2";
+        }
+        else {
+            wintext += "Class 1";
+        }
         para.text("Final score: " + score);
     }
 }
