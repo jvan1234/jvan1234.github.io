@@ -186,7 +186,7 @@ function loadQuestion(para, div, num)
         else {
             wintext += "Class 1";
         }
-        para.text("Final score: " + score);
+        para.text(wintext);
     }
 }
 
