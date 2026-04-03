@@ -36,7 +36,7 @@ function loadQuestion(para, div, num)
             "value":exampleQuestions[num].ans[answer]
             });
             btn.click(function(){
-                score += $(this).val();
+                score += Number($(this).val()); // adds the NUMERICAL value to the score
                 alert($(this).val());
                 loadQuestion(para, div, num+1);
             });
