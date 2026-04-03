@@ -157,7 +157,7 @@ function loadQuestion(para, div, num)
             });
             btn.click(function(){
                 score += Number($(this).val()); // adds the NUMERICAL value to the score
-                alert($(this).val());
+                //alert($(this).val()); // DEBUG: displays the score of the answer
                 loadQuestion(para, div, num+1);
             });
             div.append(btn);
