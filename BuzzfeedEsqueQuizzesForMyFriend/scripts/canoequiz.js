@@ -36,10 +36,10 @@ $(document).ready(function(){
     {
         let btn = $("<button>", {
         "type":"button",
-        "onclick":function(){
-            console.log("Button has been pressed!!");
-        },
         "text":answer
+        });
+        btn.click(function(){
+            alert("Button has been pressed!!");
         });
         quizDiv.append(btn);
     }
