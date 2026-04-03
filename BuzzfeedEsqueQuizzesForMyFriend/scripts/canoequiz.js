@@ -43,6 +43,10 @@ function loadQuestion(para, div, num)
             div.append(btn);
         }
     }
+    else
+    {
+        para.text("Final score: " + score);
+    }
 }
 
 $(document).ready(function(){
