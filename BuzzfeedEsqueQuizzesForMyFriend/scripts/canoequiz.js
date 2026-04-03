@@ -28,10 +28,11 @@ function loadQuestion(para, div, num)
     {
         let btn = $("<button>", {
         "type":"button",
-        "text":answer
+        "text":answer,
+        "value":exampleQuestions[num].ans[answer]
         });
         btn.click(function(){
-            alert($(this).text());
+            alert($(this).val());
         });
         div.append(btn);
     }
