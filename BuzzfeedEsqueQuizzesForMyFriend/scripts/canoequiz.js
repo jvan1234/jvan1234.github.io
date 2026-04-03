@@ -22,25 +22,10 @@ function myFunc()
     return 5;
 }
 
-function loadQuestion(div, num)
+function loadQuestion(para, div, num)
 {
+    para.text(exampleQuestions[num].question);
     // Blank for now!!
-}
-
-$(document).ready(function(){
-
-
-
-
-    let quizDiv = $("#questionaire");
-    let questionTxt = $("#question");
-    console.log("Page loaded!");
-
-    console.log(quizDiv.id + " is the class of the questionaire div *hopefully");
-    questionTxt.text(exampleQuestions[1].question);
-    
-    console.log("This is an example of a console log!!");
-
     for (const answer of Object.keys(exampleQuestions[1].ans))
     {
         let btn = $("<button>", {
@@ -50,6 +35,16 @@ $(document).ready(function(){
         btn.click(function(){
             alert("Button has been pressed!!");
         });
-        quizDiv.append(btn);
+        div.append(btn);
     }
+}
+
+$(document).ready(function(){
+    let quizDiv = $("#questionaire");
+    let questionTxt = $("#question");
+    console.log("Page loaded!");
+
+    console.log(quizDiv.id + " is the class of the questionaire div *hopefully");
+    
+    loadQuestion(questionTxt, quizDiv, 1);
 })
