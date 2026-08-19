@@ -32,7 +32,12 @@
     font-family: Wonder;
     src: url("fonts/Wonder.otf") format("opentype");
 }
-
+:root
+{
+    --txt-color: #FaFaFa;
+    --main-dark: #16047a;
+    --main-light: #361dc4;
+}
 .marioEsque
 {
     height: 300px;
@@ -73,20 +78,8 @@
 
 html, body
 {
-    --main-dark: #16047a;
-    --main-light: #361dc4;
-
-    margin-top: 0px;
-    padding-top: 0px;
-
-    margin-left: 0px;
-    padding-left: 0px;
-
-    margin-right: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 dd, dt
@@ -117,39 +110,72 @@ body
     font-family: SeuratPro, "Gill Sans", sans-serif;
 }
 
+/* Simple opacity fade */
+
+@keyframes tape_scroll {
+    0% {
+        background-position: 0vx 0vx;
+    }
+    100% {
+        background-position: 2vx 0vx;
+    }
+}
+
+.warning {
+    background-image: repeating-linear-gradient(
+        45deg,
+        var(--main-light),
+        var(--main-light) 5vw,
+        var(--main-dark) 5vw,
+        var(--main-dark) 10vw
+      );
+      background-size: 100% 100%;
+      color: var(--txt-color);
+      animation: tape_scroll 5s linaer infinite;
+      box-shadow: 0vw -0.5vw 25px rgba(5, 5, 5, 0.5);
+}
+
+#header {
+    background-color: var(--main-light);
+}
+#header h1 {
+    font-size: 10vw;
+    text-align: center;
+    color: var(--txt-color);
+}
 /* Marquee effect - https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
-.marquee {
+#marquee {
     position: relative;
     overflow: hidden;
-    background-color: gradient();
     --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
+    --move-initial: calc(-20% + var(--offset));
+    --move-final: calc(-40% + var(--offset));;
 }
 
 .marquee__inner {
+    background-size: 100% 2vw;
     width: fit-content;
     display: flex;
     position: relative;
     overflow: hidden;
     transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
+    animation: marquee_text 5s linear infinite;
 }
 
-.marquee span {
+#marquee span {
     overflow: hidden;
-    font-size: 10vw;
+    font-size: 5vw;
     padding: 0 2vw;
     white-space: nowrap;
     cursor: default;
+    color:var(--txt-color)
 }
-
-.marquee:hover .marquee__inner {
+/*
+#marquee:hover .marquee__inner {
     animation-play-state: running;
 }
-
-@keyframes marquee {
+*/
+@keyframes marquee_text {
     0% {
         transform: translate3d(var(--move-initial), 0, 0);
     }
