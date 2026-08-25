@@ -76,12 +76,6 @@
     text-shadow: 4px 4px 5px black;
 }
 
-html, body
-{
-    margin: 0;
-    padding: 0;
-}
-
 dd, dt
 {
     background-color: var(--main-dark);
@@ -94,6 +88,8 @@ dd, dt
 
 body
 {
+    margin: 0;
+    padding: 0;
     background-image: url("./Images/blackCheckers.png");
 }
 
@@ -110,22 +106,10 @@ body
     font-family: SeuratPro, "Gill Sans", sans-serif;
 }
 
-/* Alignment Classes Vertical - https://ryanmulligan.dev/blog/50-50-overflow/ */
-.split__v {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.split__v > * {
-    flex-grow: 1;
-    flex-basis: 250px;
-}
-
 /* Alignment Classes Horizontal - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_split_screen */
 .split {
     height:100%;
-    width: 50vw;
-    position:fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -133,14 +117,8 @@ body
     padding-top: 2vw;
 }
 
-.left {
-    left: 0;
-    margin: 0 auto;
-}
-
-.right {
-    right: 0;
-    margin: 0 auto;
+.split > * {
+    width: 50%
 }
 
 /* Simple opacity fade */
@@ -173,6 +151,7 @@ body
     margin-left: 1vw;
     margin-right: 1vw;
     background-color: #4e4e4e;
+    cursor: pointer;
 }
 
 .btn img {
@@ -198,7 +177,7 @@ h2 {
 .content__box {
     background-color: #3a3a3a;
     border-radius: 5px;
-    box-shadow: 5px 5px 25px;
+    box-shadow: 1vw 1vw 4vw;
     width: 90%;
     /*height: 20vw;*/
     padding: 1vw;
