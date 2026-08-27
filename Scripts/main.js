@@ -1,41 +1,44 @@
-function changeBackground(backgroundImage)
-{
-    if (backgroundImage === "https://jvan1234.github.io/Images/blackCheckers.png") { // If the set background image is equal to the dark background theme
-        console.log("Image represents the dark mode! Making text white...");
-        $("body").find(".normalRegular").css({"color" : "white"}); // Makes any normalRegular class white text
-        $("body").find("#titleRegular").css({"color" : "white"}); // Makes any titleRegular class white text
-    }
-    else { // If the background image is not the black checkers (white checkers or otherwise)
-        console.log("Image represents the light mode! Making text black...");
-        $("body").find(".normalRegular").css({"color" : "black"}); // Makes any normalRegular class black text
-        $("body").find("#titleRegular").css({"color" : "black"}); // Makes any titleRegular class black text
-    }
-}
+const ANIM_DUR = 250
+const BTN_COLOR = "#4e4e4e"
+var FOCUSED_RAD = 0.005;
+var UNFOCUSED_RAD = 0.0125;
 
-$(document).ready(function(){
-    // Find current background image
-    var curImage = $("body").css("background-image");
 
-    console.log(curImage + " is the current background image...");
 
-    curImage = curImage.replace('url("','').replace('")','');
+$(document).ready(function () {
+  // Button variables
+  var fa_btn = $("#fa");
+  var bsky_btn = $("#bsky");
+  var btns = $(".button");
+  var btn_color_vals = ["#e3996b", "#6c9af0", "#d957d4", "#5865F2"];
 
-    console.log(curImage + " is the actual address...");
-    if (curImage === "https://jvan1234.github.io/Images/blackCheckers.png") {
-        console.log("Image represents the dark mode! Making text white...");
-        $("body").find(".normalRegular").css({"color" : "white"}); // Applies a white text to the
-    }
-    
-    changeBackground(curImage);
-
-    // Source: https://css-tricks.com/snippets/jquery/simple-jquery-accordion/
-    var panels = $(".accordion > dd"); // Finds all Description Details and gets their hide function
-    console.log(panels);
-    panels.hide();
-    $(".accordion > dt").click(function(event){
-        console.log("DT clicked!!");
-        panels.slideUp();
-        $(this).next("dd").slideDown();
-        return false;
-    })
+  $(window).on("resize", function () {
+    $.each(btns, function (i, obj) {
+      $(this).animate({
+        borderTopLeftRadius: $(window).width() * UNFOCUSED_RAD,
+        borderTopRightRadius: $(window).width() * UNFOCUSED_RAD,
+        borderBottomLeftRadius: $(window).width() * UNFOCUSED_RAD,
+        borderBottomRightRadius: $(window).width() * UNFOCUSED_RAD
+      }, 0)
+    });
+  });
+  $.each($(".button"), function (i, btn) {
+    $(this).hover(function () {
+      $(this).animate({
+        backgroundColor: btn_color_vals[i],
+        borderTopLeftRadius: $(window).width() * FOCUSED_RAD,
+        borderTopRightRadius: $(window).width() * FOCUSED_RAD,
+        borderBottomLeftRadius: $(window).width() * FOCUSED_RAD,
+        borderBottomRightRadius: $(window).width() * FOCUSED_RAD
+      }, ANIM_DUR)
+    }, function () {
+      $(this).animate({
+        backgroundColor: BTN_COLOR,
+        borderTopLeftRadius: $(window).width() * UNFOCUSED_RAD,
+        borderTopRightRadius: $(window).width() * UNFOCUSED_RAD,
+        borderBottomLeftRadius: $(window).width() * UNFOCUSED_RAD,
+        borderBottomRightRadius: $(window).width() * UNFOCUSED_RAD
+      }, ANIM_DUR)
+    });
+  });
 })
